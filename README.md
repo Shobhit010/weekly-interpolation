@@ -8,11 +8,11 @@ Given a set of `(date → value)` pairs, the program calculates totals for each 
 ## 📂 Project Structure
 ```
 weekdays-interpolation/
-│
-├── solution.js # Main logic for filling missing weekday values
-├── test.js # Unit tests for verifying correctness
-├── package.json 
-└── README.md # Project documentation
+    │
+    ├── solution.js # Main logic for filling missing weekday values
+    ├── test.js # Unit tests for verifying correctness
+    ├── package.json 
+    └── README.md # Project documentation
 ```
 
 ---
@@ -28,14 +28,14 @@ weekdays-interpolation/
 
 ## 📦 Installation
 1. Clone the repository:
-- git clone https://github.com/yourusername/fill-missing-weekdays.git
+- git clone https://github.com/yourusername/weekdays-interpolation.git
 - cd weekdays-interpolation
 2. Ensure you have Node.js installed:
 - node -v
-If not, download from Node.js official website.
+- If not, download from Node.js official website.
 
 ## 🛠 Usage
-Place your date-value data into an object:
+- Place your date-value data into an object:
 ```
 const data = {
     "2023-01-01": -5, // Sun
@@ -46,10 +46,12 @@ const solution = require("./solution");
 console.log(solution(data));
 ```
 
-Run:
-- node yourscript.js
+- Run:
+```
+node yourscript.js
+```
 
-Example output:
+- Example output:
 ```
 {
   "Mon": 10,
