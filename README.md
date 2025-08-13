@@ -28,15 +28,15 @@ weekdays-interpolation/
 
 ## 📦 Installation
 1. Clone the repository:
-   git clone https://github.com/yourusername/fill-missing-weekdays.git
-   cd fill-missing-weekdays
+- git clone https://github.com/yourusername/fill-missing-weekdays.git
+- cd weekdays-interpolation
 2. Ensure you have Node.js installed:
-  node -v
+- node -v
 If not, download from Node.js official website.
 
 ## 🛠 Usage
 Place your date-value data into an object:
-
+```
 const data = {
     "2023-01-01": -5, // Sun
     "2023-01-02": 10, // Mon
@@ -44,11 +44,13 @@ const data = {
 };
 const solution = require("./solution");
 console.log(solution(data));
+```
 
 Run:
-node yourscript.js
+- node yourscript.js
 
 Example output:
+```
 {
   "Mon": 10,
   "Tue": -3,
@@ -58,15 +60,16 @@ Example output:
   "Sat": -4.6,
   "Sun": -5
 }
+```
 
 ## 🧪 Running Tests
 The test.js file contains multiple test cases:
-node test.js
+- node test.js
 
 Expected output:
-Test 1 passed
-Test 2 passed
-Test 3 passed
+- Test 1 passed
+- Test 2 passed
+- Test 3 passed
 
 ## 📚 How It Works
 - Initialization – Creates a map for all 7 weekdays with 0 values.
@@ -77,5 +80,5 @@ Test 3 passed
 
 - Return – Outputs an object with all 7 weekdays filled.
 
-📄 License
+## 📄 License
 - This project is open-source and available under the MIT License.
